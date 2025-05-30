@@ -57,8 +57,8 @@ export const MultiStepForm = ({
   };
 
   const handleNext = () => {
+    console.log({formData})
     const valid = validateStep(currentStepKey);
-    console.log({valid})
     if (valid) {
       if (isLastStep) {
         onComplete?.();

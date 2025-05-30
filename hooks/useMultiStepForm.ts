@@ -30,8 +30,6 @@ export function useMultiStepForm<T extends Record<string, any>>(
         [field]: value,
       },
     }));
-    console.log({formData})
-    //need to share the updated data then can go for validationstep
   };
 
   const validateStep = (step: keyof T): boolean => {

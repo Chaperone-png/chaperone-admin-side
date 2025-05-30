@@ -2,9 +2,6 @@ import { configureStore } from "@reduxjs/toolkit";
 import toastReducer from "./slices/toastSlice";
 import loaderReducer from "./slices/loaderSlice";
 import userReducer from "./slices/userSlice";
-import cartReducer from "./slices/cartSlice";
-import categoryReducer from "./slices/categorySlice";
-import searchmodalReducer from "./slices/searchModalSlice";
 import { persistStore } from "redux-persist";
 
 export const store = configureStore({
@@ -12,9 +9,6 @@ export const store = configureStore({
     toast: toastReducer,
     loader: loaderReducer,
     user: userReducer,
-    cart: cartReducer,
-    category: categoryReducer,
-    searchmodal: searchmodalReducer,
   },
 
   middleware: (getDefaultMiddleware) =>

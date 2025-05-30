@@ -3,9 +3,6 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
-import { getCollectionsProduct } from "@/actions/Products/collectionProducts";
-import { hideLoader, showLoader } from "@/store/slices/loaderSlice";
-import { showToast } from "@/store/slices/toastSlice";
 import { Product } from "@/types/ProductsType/ProductType";
 
 export interface ProductListingParams {
@@ -105,49 +102,6 @@ export const useProductListingParams = () => {
     setHasMounted(true);
   }, [pathname, searchParams, isCollectionView, isSearchView]);
 
-  const fetchProducts = useCallback(
-    async (currentParams: ProductListingParams) => {
-      try {
-        dispatch(showLoader());
-        setDataFetched(false);
-        const productResponse = await getCollectionsProduct(currentParams);
-        const { data, status } = productResponse;
-
-        setDataFetched(true);
-        if (status !== 200) {
-          dispatch(
-            showToast({
-              type: "error",
-              message: data.message || "Got error while fetching the products.",
-            })
-          );
-        } else {
-          setHasMoreProducts(data.hasMore);
-          setProducts((prev) => [...prev, ...data.products]);
-          dispatch(
-            showToast({
-              type: "success",
-              message: data.message || "Successfully fetched",
-            })
-          );
-        }
-      } catch (err: any) {
-        setDataFetched(true);
-        dispatch(
-          showToast({
-            type: "error",
-            message: err.message || "Something went wrong",
-          })
-        );
-        setProducts([]);
-        setHasMoreProducts(false);
-      } finally {
-        dispatch(hideLoader());
-      }
-    },
-    [dispatch]
-  );
-
   useEffect(() => {
     const query: { [key: string]: string } = {};
 
@@ -186,8 +140,7 @@ export const useProductListingParams = () => {
       isFirstRender.current = false;
       return;
     }
-    fetchProducts(params);
-  }, [params, fetchProducts, hasMounted]);
+  }, [params, hasMounted]);
 
   // ✅ Utility updaters
   const updatePincode = useCallback((pincode: string) => {
@@ -248,6 +201,5 @@ export const useProductListingParams = () => {
     updateSearchedString,
     updateBestSeller,
     getApiBody,
-    refetch: () => fetchProducts(params),
   };
 };
