@@ -1,0 +1,29 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.0003 20.6138C18.9134 20.6138 21.273 18.2543 21.273 15.3411V8.09109C21.273 5.1779 18.9134 2.81836 16.0003 2.81836C13.0871 2.81836 10.7275 5.1779 10.7275 8.09109V15.3411C10.7275 18.2543 13.0871 20.6138 16.0003 20.6138Z" stroke="url(#paint0_linear_538_1786)" stroke-width="1.97727" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.91504 12.9023V15.1433C5.91504 20.706 10.4364 25.2273 15.9991 25.2273C21.5619 25.2273 26.0832 20.706 26.0832 15.1433V12.9023" stroke="url(#paint1_linear_538_1786)" stroke-width="1.97727" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.168 8.65828C15.3543 8.22328 16.6462 8.22328 17.8325 8.65828" stroke="url(#paint2_linear_538_1786)" stroke-width="1.97727" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.9453 11.4529C15.6439 11.2683 16.3689 11.2683 17.0676 11.4529" stroke="url(#paint3_linear_538_1786)" stroke-width="1.97727" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 25.2275V29.1821" stroke="url(#paint4_linear_538_1786)" stroke-width="1.97727" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_538_1786" x1="16.0003" y1="2.81836" x2="16.0003" y2="20.6138" gradientUnits="userSpaceOnUse">
+<stop stop-color="#83EAC8"/>
+<stop offset="1" stop-color="#29DAD1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_538_1786" x1="15.9991" y1="12.9023" x2="15.9991" y2="25.2273" gradientUnits="userSpaceOnUse">
+<stop stop-color="#83EAC8"/>
+<stop offset="1" stop-color="#29DAD1"/>
+</linearGradient>
+<linearGradient id="paint2_linear_538_1786" x1="16.0002" y1="8.33203" x2="16.0002" y2="8.65828" gradientUnits="userSpaceOnUse">
+<stop stop-color="#83EAC8"/>
+<stop offset="1" stop-color="#29DAD1"/>
+</linearGradient>
+<linearGradient id="paint3_linear_538_1786" x1="16.0064" y1="11.3145" x2="16.0064" y2="11.4529" gradientUnits="userSpaceOnUse">
+<stop stop-color="#83EAC8"/>
+<stop offset="1" stop-color="#29DAD1"/>
+</linearGradient>
+<linearGradient id="paint4_linear_538_1786" x1="16.5" y1="25.2275" x2="16.5" y2="29.1821" gradientUnits="userSpaceOnUse">
+<stop stop-color="#83EAC8"/>
+<stop offset="1" stop-color="#29DAD1"/>
+</linearGradient>
+</defs>
+</svg>

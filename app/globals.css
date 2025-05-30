@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717; 
+  --textColor:#101828; 
+  --text-Primary:#0D615E;
+  --border-color:#11827E;
+  --progressBarColor:#15A29E;
+  --tabs-color:#E8E6F6;
+  --primarybgcolor: #0A4C4A;
+  --text-light-white: #F4F0E7;
+  --secondrybgcolor: #DE722A;
+  --linkColor: #F5C439;
+  --beigeshade: #ede9d2;
+  --greenbg: #0F4811;
+  --light-orange: #ffeed5;
+  --xs-light-org: #FFFAF1;
+  --dark-text-color: #1A1B1E;
+  --text-black-light-color:#6A6A6A;
+  --extra-light-org:#FEF7EA;
+  --skyblue:#1CD8D2;
+  --skyBlueShade:#E8FBFB; 
+  --very-light-sky-blue:#EEFFFE;   
+  --skyLight:#DDF9F8;
+  --lightGray:#F8F8F8;
+  --light-sky-blue:#C9E7E8;
+  --orange-bg:#FDEFD3;
+  --light-org:#FACA70;
+  --light-org-shade: #E1B665;
+  --light-brown: #584727;
+  --greenShade:#E2FFB9;
+  --gray:#F7F7F7;
+  --grayBG:#F6F6F6;
+
+  --offerColor1:#FDE1EA;
+  --offerColor2:#FDEFD3;
+  --offerColor3:#D9E3F5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: --dark-text-color;
+  background: --background;
+}
+
+.title-lg{
+  font-family: 'RallomyRegular';
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: normal;
+}
+input,
+textarea {
+  @apply border border-gray-400 rounded-md p-2;
+}
+
+label {
+  @apply font-bold;
+}
+/* 
+.common-button {
+  @apply bg-[var(--primarybgcolor)] text-[var(--text-light-white)] py-2 px-4 rounded-full hover:bg-[var(--secondrybgcolor)] hover:text-white;
+} */
+
+.modal-title {
+  @apply text-2xl font-bold mb-4 text-[var(--primarybgcolor)];
+}
+
+.link-text {
+  @apply text-[var(--secondrybgcolor)] underline;
+}
+
+.link-text {
+  @apply text-[var(--secondrybgcolor)] underline;
+}
+.modal-wrapper  .link-text {
+   color: #0044BD;
+}

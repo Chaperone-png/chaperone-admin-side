@@ -1,0 +1,350 @@
+.maali-booking-list {
+  .booking-card-wrapper {
+    color: #344054;
+  }
+
+  .maali-circle-image {
+    border: 1px solid #faca70;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 1px;
+  }
+
+  .common-button {
+    color: #1a1b1e;
+    border: 2px solid #1a1b1e;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 2px 15px;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #1a1b1e;
+      color: #fff;
+    }
+  }
+
+  .booking-status {
+    padding: 4px 12px 4px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    position: relative;
+    background-color: #0d615e;
+    color: #fff;
+    margin-left: 8px;
+    border: 1px solid #0d615e;
+    font-weight: 600;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background-color: #fff;
+    }
+
+    &.status-scheduled {
+      background-color: #fef7ea;
+      border-color: #c8a25a;
+      color: #705b32;
+
+      &::before {
+        background-color: #e1b665;
+      }
+    }
+
+    &.status-completed {
+      background-color: #e6ecf8;
+      border-color: #003697;
+      color: #002971;
+
+      &::before {
+        background-color: #003697;
+      }
+    }
+
+    &.status-confirmed {
+      background-color: #ddf9f8;
+      border-color: #16ada8;
+      color: #0a4c4a;
+
+      &::before {
+        background-color: #16ada8;
+      }
+    }
+
+    &.status-failed {
+      background-color: #fef0f5;
+      border-color: #ba778c;
+      color: #704754;
+
+      &::before {
+        background-color: #ba778c;
+      }
+    }
+  }
+}
+
+.orders-list {
+  .order-card-wrapper {
+    color: #344054;
+  }
+
+  .status-delivery {
+    color: #11827e;
+    font-weight: 600;
+  }
+
+  .status-delivered {
+    font-weight: 600;
+  }
+
+  .order-delivered {
+    .order-img-list {
+      display: flex;
+      gap: 10;
+
+      li {
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+
+        &:last-child:before {
+          content: "";
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.4);
+          width: 100%;
+          height: 100%;
+        }
+
+        button {
+          position: absolute;
+          padding: 0 !important;
+          border: 0 none;
+          background-color: transparent;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+
+          svg {
+            width: 35px;
+            height: 35px;
+
+            path {
+              stroke: #fff;
+            }
+          }
+
+          &:hover {
+            border: 0 none;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .order-img-list {
+    display: flex;
+    gap: 10;
+
+    li {
+      border-radius: 6px;
+      overflow: hidden;
+    }
+  }
+
+  .common-button {
+    color: #1a1b1e;
+    border: 2px solid #1a1b1e;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 2px 15px;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #1a1b1e;
+      color: #fff;
+    }
+  }
+}
+
+
+.order-detail-wrapper {
+  h3.delivery-date {
+    color: #11827E;
+    font-size: 18px;
+  }
+
+  .drop-review-wrapper {
+    background-color: rgba(232, 232, 233, 0.4);
+    border: 2px solid #e8e8e9;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+    .drop-review-field {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .drop-review-label {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1A1B1E;
+      margin-bottom: 10px;
+    }
+
+    .raiting-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1A1B1E;
+
+    }
+  }
+
+  .return-policy-wrapper {
+    border-top: 1px solid #E6E6E6;
+    padding-top: 15px;
+    margin-top: 15px;
+
+    h3 {
+      font-size: 16px;
+      color: #818185;
+      font-weight: 600;
+    }
+
+    a {
+      color: #16ADA8;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: underline;
+
+    }
+  }
+
+  .order-detail-right-panel {
+    .border-box-ui {
+      border: 2px solid #D9E3F5;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+
+    .address-body {
+      font-size: 12px;
+
+      .iconWDText {
+        font-size: 16px;
+        font-weight: 600;
+
+      }
+
+      .iconWDTextSm {
+        font-weight: 600;
+      }
+    }
+
+    .get-invoice {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  .order-price {
+    .order-price-title {
+      color: #151618;
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      margin-bottom: 5px;
+
+      small {
+        background-color: #E8FBFB;
+        padding: 4px 15px;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 600;
+        color: #11827E;
+      }
+    }
+
+    .order-price-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .additional-discount {
+        color: #15A29E;
+      }
+
+      span {
+        font-weight: 400;
+        color: #818185;
+        font-size: 12px;
+      }
+
+      .order-total {
+        span {
+          color: #151618;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+      }
+    }
+  }
+}
+
+.profile-info-wrapper {
+  svg {
+    path {
+      stroke: #D6D6D6;
+    }
+  }
+
+  .input-field-style {
+    svg {
+      path {
+        stroke: #D6D6D6;
+      }
+    }
+  }
+
+  svg.calendar-icon {
+    path {
+      stroke: #19C2BD !important;
+    }
+  }
+}
+
+
+.Delivery-content {
+  h4 {
+    color: #0A4C4A;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .descriptionTxt {
+    color: #1A1B1E;
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+
+.plant-img-wrapper {
+  border: 1px solid #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(1, 54, 106, 0.2);
+}

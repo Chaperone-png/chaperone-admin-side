@@ -1,0 +1,57 @@
+.profile-section {
+  box-shadow: 0 2px 6px rgba(0, 64, 128, 0.2);
+}
+.tagline {
+  background-color: #e2ffb9;
+  position: relative;
+  width: auto;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 22px;
+    height: 24px;
+    background-image: url("../../../public/assets/images/profile/tagLeft.svg");
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 22px;
+    height: 24px;
+    background-image: url("../../../public/assets/images/profile/tagRight.svg");
+  }
+}
+
+.profileNav {
+  ul {
+    li {
+      button {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        color: #15a29e;
+        padding: 10px 20px;
+        border-radius: 50px;
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        &:hover {
+          background-color: #ddf9f8;
+        }
+
+        &.active {
+          color: #000;
+          background-color: #ddf9f8;
+          box-shadow: 0 2px 6px rgba(0, 64, 128, 0.2);
+        }
+      }
+    }
+  }
+}

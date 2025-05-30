@@ -1,0 +1,17 @@
+<svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_755_1881)">
+<rect width="84" height="84" rx="42" fill="#11827E"/>
+<ellipse cx="42.4658" cy="80" rx="38.4658" ry="39" fill="url(#paint0_linear_755_1881)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40.7322 17.7322C41.7085 16.7559 43.2915 16.7559 44.2678 17.7322L59.2678 32.7322C60.2441 33.7085 60.2441 35.2915 59.2678 36.2678C58.2915 37.2441 56.7085 37.2441 55.7322 36.2678L45 25.5355L45 64.5C45 65.8807 43.8807 67 42.5 67C41.1193 67 40 65.8807 40 64.5L40 25.5355L29.2678 36.2678C28.2915 37.2441 26.7085 37.2441 25.7322 36.2678C24.7559 35.2915 24.7559 33.7085 25.7322 32.7322L40.7322 17.7322Z" fill="white"/>
+</g>
+<rect x="1" y="1" width="82" height="82" rx="41" stroke="#11827E" stroke-width="2"/>
+<defs>
+<linearGradient id="paint0_linear_755_1881" x1="42.4658" y1="41" x2="42.4658" y2="119" gradientUnits="userSpaceOnUse">
+<stop stop-color="#149792"/>
+<stop offset="1" stop-color="#2E3838"/>
+</linearGradient>
+<clipPath id="clip0_755_1881">
+<rect width="84" height="84" rx="42" fill="white"/>
+</clipPath>
+</defs>
+</svg>

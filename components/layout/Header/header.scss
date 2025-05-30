@@ -1,0 +1,107 @@
+@import "@/app/css-variable.scss";
+
+.right-top-nav {
+
+    li {
+        &:last-child {
+            padding-left: 15px;
+            border-left: 1px solid #000;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+    }
+
+}
+
+.login-btn {
+    padding: 0 0 0 15px;
+
+    .icon-wrapper {
+        background-color: #fff;
+        border-radius: 50px;
+        padding: 6px;
+    }
+}
+
+.megamenuImgWrapper {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.megaMenu {
+    h3 {
+        color: #170F49;
+        font-weight: 700;
+        margin-bottom: 7px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        li {
+            padding: 4px 0;
+
+            a {
+                color: #6F6C90;
+                font-size: 14px;
+                position: relative;
+
+                &:hover {
+                    color: $linkColor;
+
+                    &::after {
+                        content: "";
+                        background-color: $linkColor;
+                        width: 100%;
+                        height: 1px;
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        animation: fadeInOut 0.2s ease-in-out;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+.mobile-toggle-btn {
+    background-color: #faca70;
+    border-radius: 50px;
+    height: 37px;
+    width: 37px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mega-nav {
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.header-sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

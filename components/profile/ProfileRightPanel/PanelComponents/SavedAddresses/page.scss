@@ -1,0 +1,119 @@
+.address-card {
+  border: 2px solid #f7f7f7;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(1, 54, 106, 0.2);
+
+  &.default-address-card {
+    border-color: #d9e3f5;
+  }
+
+  .address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .default-address {
+    background-color: #0d615e;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 50px;
+    font-size: 14px;
+  }
+
+  .addressTag {
+    color: #606062;
+    font-size: 14px;
+  }
+
+  .iconWDText {
+    color: #151618;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 11px;
+  }
+
+  .iconWDTextSm {
+    color: #151618;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .address-footer {
+    display: flex;
+    gap: 2px;
+    justify-content: flex-end;
+    align-items: center;
+
+    .edit-button {
+      color: #15a29e;
+      transition: all 0.3s ease-in-out;
+
+      svg {
+        path {
+          stroke: #15a29e;
+        }
+      }
+
+      &:hover {
+        background-color: #15a29e;
+        color: white;
+        transition: all 0.3s ease-in-out;
+        svg {
+          path {
+            stroke: white;
+          }
+        }
+      }
+    }
+
+    .remove-button {
+      color: #f56a6a;
+
+      svg {
+        path {
+          stroke: #f56a6a;
+        }
+      }
+
+      &:hover {
+        background-color: #f56a6ae0;
+        color: white;
+        transition: all 0.3s ease-in-out;
+        svg {
+          path {
+            stroke: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.overlay-blur {
+  position: relative;
+  overflow: hidden;
+}
+
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90%;
+  z-index: 1001;
+}

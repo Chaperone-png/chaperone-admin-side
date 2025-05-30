@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'RallomyRegular';
+    src: url('fonts/RallomyRegular.eot');
+    src: url('fonts/RallomyRegular.eot') format('embedded-opentype'),
+         url('fonts/RallomyRegular.woff2') format('woff2'),
+         url('fonts/RallomyRegular.woff') format('woff'),
+         url('fonts/RallomyRegular.ttf') format('truetype'),
+         url('fonts/RallomyRegular.svg#RallomyRegular') format('svg');
+}

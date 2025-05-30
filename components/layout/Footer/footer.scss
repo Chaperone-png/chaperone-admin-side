@@ -1,0 +1,96 @@
+@import "../../../app/css-variable.scss";
+
+footer {
+  color: $dark-text-color;
+  background-color: $xs-light-org;
+
+  .copyright {
+    border-top: 1px solid $dark-text-color;
+  }
+}
+
+.footer-listing {
+  h4 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+
+    &::after {
+      content: "";
+      background-color: #de722a;
+      width: 110%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  ul {
+    li {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.social-icon-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+
+  .icon-style {
+    div {
+      background-image: url("../../../public/assets/images/social-icon.svg");
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    .facebook-icon {
+      background-position: -3px 0;
+
+      &:hover {
+        background-position: -3px 27px;
+      }
+    }
+
+    .vector-icon {
+      background-position: -37px 0;
+
+      &:hover {
+        background-position: -37px 27px;
+      }
+    }
+
+    .instagram-icon {
+      background-position: -72px 0;
+
+      &:hover {
+        background-position: -72px 27px;
+      }
+    }
+
+    .linkedin-icon {
+      background-position: -106px 0;
+
+      &:hover {
+        background-position: -106px 27px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .footer-listing {
+    width: 100%;
+    grid-column: span 4 / span 4;
+  }
+}
