@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Header from "@/components/layout/Header/page";
-import Footer from "@/components/layout/Footer/page";
 import Sidebar from "@/components/layout/Sidebar";
 import { fetchAppRoutes } from "@/actions/public/getRoutes";
 import { isExactOrDynamicMatch } from "@/utils/RouteConfig/matchPathWithRoute";
